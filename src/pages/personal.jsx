@@ -2,11 +2,11 @@ import React from 'react';
 
 import {Header} from '../component/header';
 import {LeftBar} from '../component/leftBar';
-import {FilterPanel} from '../component/filterPanel';
-import {TableElement} from '../component/tableElement';
+import {TablePersonal} from '../component/tablePersonal';
+import {FilterPanelPersonal} from '../component/filterPanelPersonal';
 import {RedactionPanel} from '../component/redactionPanel';
 
-function Redaction() {
+function Personal() {
    
     return (
       <div>
@@ -16,11 +16,11 @@ function Redaction() {
                     <div className='main__second_wrapper'>
                         <LeftBar/>
                         <div className='right__side'>
-                                <RedactionPanel/>
+                            <RedactionPanel/>
                             <div className='right__side_wrapper_two_blocks'>
-                                <FilterPanel/>
+                                <FilterPanelPersonal/>
                                 <div className='right__side_third_block'>
-                                    <TableElement/>
+                                    <TablePersonal/>
                                 </div>
                             </div>
                         </div>
@@ -31,4 +31,4 @@ function Redaction() {
     );
   }
 
-export  {Redaction};
+export  {Personal};

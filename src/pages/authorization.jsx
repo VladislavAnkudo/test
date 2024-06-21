@@ -78,6 +78,12 @@ function Authorization() {
                   <Button className='authorization__btn' onClick={handleLogin}>
                     Войти
                   </Button>
+                  <div>
+                    <a href="/redaction">Изменение</a><br/>
+                    <a href="/shopcatelement">Категория товара</a><br/>
+                    <a href="/personal">Команда</a><br/>
+                    <a href="/shops">Магазины</a><br/>
+                  </div>
                   {showText && (
                     <div className='hidden__wrap'>
                     <div className='fa-line__text'>

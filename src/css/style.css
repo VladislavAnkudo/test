@@ -432,7 +432,7 @@ body{
 .right__side_line_second{
     background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(67, 44, 44),rgba(80, 28, 28, 0) 100%);
     opacity: 0.24;
-    height: 0.5px;
+    height: 1px;
     margin-top: 13px;
     margin-bottom: 5px;   
 }
@@ -524,21 +524,36 @@ tr:last-child{
     border-radius: 9.5px;
     background: rgb(247, 242, 254);
     color: rgb(152, 104, 245);
-    padding: 2px 0;
+    padding: 2px 6px;
+    width: fit-content;
+    margin: 0 auto;
 }
 .add{
     border: 0.5px solid rgb(111, 214, 146);
     border-radius: 9.5px;
     background: rgb(233, 255, 245);
     color: rgb(94, 208, 132);
-    padding: 2px 0;    
+    padding: 2px 6px;  
+    width: fit-content;
+    margin: 0 auto;
 }
 .no_redac{
     border: 0.5px solid rgb(227, 47, 40);
     border-radius: 9.5px;
     background: rgb(250, 228, 227);
     color: rgb(227, 47, 40);
-    padding: 2px 0;      
+    padding: 2px 6px;     
+    width: fit-content;
+    margin: 0 auto;
+}
+.sup{
+    border: 0.5px solid rgb(137, 154, 237);
+    border-radius: 9.5px;
+    background: rgb(137, 154, 237, 0.31);
+    color: rgb(137, 154, 237);
+    padding: 2px 6px; 
+    width: fit-content; 
+    margin: 0 auto;
 }
 thead tr{
     border: none;
@@ -600,6 +615,130 @@ thead tr{
     border-radius: 9px;
     padding: 7px 11px 6px 10px
 }
+.wrapper_shop_title_filter{
+    margin: 27px 0 15px 20px;
+}
+.shop_cat_title{
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+.wrapper_filter_shop{
+    display: flex;
+    gap: 20px;
+}
+.shop_filter_first{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0.35px solid rgb(224, 224, 224);
+    border-radius: 9.13px;    
+    background: rgb(245, 247, 254);
+    padding: 8.37px 4.37px;
+}
+.shop_filter_first_title{
+    color: rgb(122, 121, 120);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.shop_filter_first_line{
+    border: 1.22px solid #7a7978;
+    height: 9px;
+}
+.wrapper__elements_cat{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.wrapper__element_cat_one{
+    border: 0.35px solid rgb(244, 245, 247);
+    border-radius: 10px;    
+    background: rgb(245, 247, 254);
+    padding: 14px;
+}
+.wrapper__element_cat_one_img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 243px;
+    max-height: 243px;
+}
+.element_cat_one_title{
+    color: rgba(36, 34, 32, 0.56);
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+.element_cat_one_title_button{
+    border-radius: 9.13px;
+    background: rgb(80, 102, 215);
+    border: none;
+    color: rgb(245, 247, 254);
+    font-weight: 600;
+    line-height: 130%;
+    padding: 9.13px 16.07px 9.13px 13.03px;
+    margin-left: auto;
+    display: block;
+}
+.wrapper_shops{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 32px;
+}
+.shop_element_title{
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+.shop_element_line{
+    background: rgb(198, 198, 198);
+    opacity: 0.24;
+    width: 100%;    
+    height: 1px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.wrapper_button_shop{
+    margin-left: 12px;
+    display: flex;
+    gap: 20px;
+}
+.shop_element_button{
+    display: flex;
+    gap: 8.5px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 9.13px;
+    background: none;
+    padding: 9.37px 9.3px 9.37px 6.28px;
+}
+.shop_element_button_line{
+    border: 1.22px solid rgb(122, 121, 120);
+    height: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
