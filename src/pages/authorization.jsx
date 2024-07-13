@@ -6,6 +6,8 @@ import username_icon from '../assets/icons/username_icon.svg'
 import password_icon from '../assets/icons/password_icon.svg'
 import animal__auth from '../assets/animal__auth.png' 
 
+import { login } from '../http/userApi';
+
 function Authorization() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -29,14 +31,15 @@ function Authorization() {
       }
     };
 
-    const handleLogin = () => {
-      
-      localStorage.setItem('username', username);
-      localStorage.setItem('password', password);
-      
-    
-      setShowText(true);
-    };
+    const handleLogin = async () => {
+      try {
+          const user = await login(username, password);
+          alert('Вы успешно вошли!');
+          setShowText(true);
+      } catch (error) {
+          alert('Ошибка при входе: ' + error.message);
+      }
+  };
   
     return (
       <div>
